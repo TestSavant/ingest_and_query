@@ -4,6 +4,8 @@ This script is primarily used for loading documents from a specified directory, 
 # query.py
 This script is primarily used for creating a question-answering system. It uses a HuggingFace model to create embeddings for documents, and these embeddings are stored in a Pinecone vector database. The script also uses an OpenAI language model to generate answers to user queries. The user can input their queries in the console, and the script will print the corresponding answers. The script takes a command-line argument for the device type for the HuggingFace model. The user queries are also logged in a file named "user_input.log".
 
+# const.py
+Teh script with all the mapping for the constants in the two scripts above. Update the .env file with the API keys for this to work 
 
 # Here's a description of each of the imported modules and functions:
 
