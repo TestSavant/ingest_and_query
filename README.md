@@ -1,7 +1,7 @@
 # ingest.py
 This script is primarily used for loading documents from a specified directory, splitting the documents into chunks, creating embeddings for the chunks using a HuggingFace model, and storing the embeddings in a Pinecone vector database. The script takes two command-line arguments: the source directory for the documents and the device type for the HuggingFace model.
 
-# wrapper.py
+# query.py
 This script is primarily used for creating a question-answering system. It uses a HuggingFace model to create embeddings for documents, and these embeddings are stored in a Pinecone vector database. The script also uses an OpenAI language model to generate answers to user queries. The user can input their queries in the console, and the script will print the corresponding answers. The script takes a command-line argument for the device type for the HuggingFace model. The user queries are also logged in a file named "user_input.log".
 
 
