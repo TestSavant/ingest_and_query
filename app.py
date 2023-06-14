@@ -3,7 +3,7 @@ import streamlit as st
 import subprocess
 
 # Create two columns for Ingest and Chat
-col1, col2 = st.beta_columns(2)
+col1, col2 = st.columns(2)
 
 # Ingest Column
 with col1:
@@ -19,7 +19,7 @@ with col1:
     # Ingest Button
     if st.button("Ingest"):
         # Call the ingest.py script with the necessary arguments
-        subprocess.call(f"python ingest.py --source_dir {source_directory} --device_type {device_type} --index_name {index_name}", shell=True)
+        subprocess.call(f"python ingest.py --source_dir {uploaded_file} --device_type {device_type} --index_name {index_name}", shell=True)
 
 # Chat Column
 with col2:
