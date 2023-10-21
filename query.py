@@ -11,9 +11,6 @@ from consts import PINECONE_SETTINGS
 from langchain.chains.question_answering import load_qa_chain
 from dotenv import load_dotenv
 from langchain.chains import RetrievalQA
-import pinecone
-from langchain.docstore.document import Document
-from langchain.embeddings import HuggingFaceInstructEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 # Load environment variables
